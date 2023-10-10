@@ -1,16 +1,22 @@
-import React, {useState} from "react";
-export interface InputInterface {}
+import React, { ReactNode, useState } from "react";
 
-const Input: React.FC<InputInterface> = () => {
-	const [value, setValue] = useState<string>("");
+export interface InputInterface {
+	render: (value: number) => ReactNode;
+}
+
+const Input: React.FC<InputInterface> = ({render}) => {
+	const [value, setValue] = useState<number>(0);
 
 	return (
-		<input
-			type="text"
-			value={value}
-			onChange={(e) => setValue(e.target.value)}
-			placeholder="Temperatura en C°"
-		/>
+		<>
+			<input
+				type="text"
+				value={value}
+				onChange={(e) => setValue(Number(e.target.value))}
+				placeholder="Temperatura en C°"
+			/>
+			{render(value)}
+		</>
 	);
 };
 
