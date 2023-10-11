@@ -1,0 +1,65 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1{
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 3rem 0;
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+/* Estilos para la card */
+article {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  overflow: hidden;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1.25rem;
+  justify-content: space-between  ;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+p {
+  line-height: 25px;
+  color: #6c757d;
+}
+
+img {
+  width: 100%;
+}
