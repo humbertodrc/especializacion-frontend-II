@@ -1,21 +1,35 @@
-import { FC } from 'react';
-import { Character } from '../types';
+import {ReactNode} from "react";
+import {Character} from "../types";
 
 interface CardProps {
-	character: Character;
+	children?: ReactNode;
+	src?: string;
+	alt?: string;
 }
 
-const Card:FC<CardProps> = ({character}) => {
+const Card = ({children}: CardProps) => {
 	return (
 		<article>
-			<div>
-				<h2>{character.title}</h2>
-				<p>{character.desc}</p>
-				<img src={character.image} alt={character.alt} />
-				<h3>{character.status}</h3>
-			</div>
+			{children}
 		</article>
 	);
 };
+
+const CardBody = ({ children }: CardProps) => <div>{children}</div>;
+
+const CardTitle = ({ children }: CardProps) => <h2>{children}</h2>;
+
+const CardDescription = ({ children }: CardProps) => <p>{children}</p>;
+
+const CardImage = ({ src, alt }: CardProps) => <img src={src} alt={alt} />;
+
+const CardStatus = ({ children }: CardProps) => <h3>{children}</h3>;
+
+Card.Body = CardBody;
+Card.Title = CardTitle;
+Card.Description = CardDescription;
+Card.Image = CardImage;
+Card.Status = CardStatus;
+
 
 export default Card;
