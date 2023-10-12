@@ -1,7 +1,7 @@
+import { useContext } from 'react'
 import './App.css'
 import { Navbar } from './components/Navbar'
-import { ProductList } from './components/ProductList'
-import {useContext} from 'react'
+import ProductListWhitLoader from './components/ProductList'
 import { ThemeContext } from './context/ThemeContext'
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
     <>
       <Navbar />
       <main className={`p-12 h-screen ${theme === 'light' ? 'bg-white' : 'bg-slate-900'}`}>
-        <ProductList />
+        <ProductListWhitLoader data={[]} />
       </main>
     </>
   )

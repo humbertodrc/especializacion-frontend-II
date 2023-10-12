@@ -1,26 +1,26 @@
-import { useEffect, useState } from 'react';
+import { WhitLoader } from '../hoc/WhitLoader';
 import { getHouses } from '../service';
 import { Home } from '../types';
-import { ProductItem } from './ProductItem';
 import { ProductGrid } from './ProductGrid';
+import { ProductItem } from './ProductItem';
 
-export const ProductList = () => {
+interface Props {
+  data: Home[];
+}
 
-  const [homes, setHomes] = useState<Home[]>([])
+export const ProductList = ({data}: Props) => {
 
-  useEffect(() => {
-    getHouses('https://house-lydiahallie.vercel.app/api/listings').then((homes) => setHomes(homes))
-  }, [])
-  
-
-
-  if (!homes) return null;
+  if (!data) return null;
 
   return (
     <ProductGrid>
-    {homes.map((home: Home) => (
+    {data.map((home: Home) => (
       <ProductItem key={home.id} home={home} />
     ))}
   </ProductGrid>
   )
 }
+
+const ProductListWhitLoader = WhitLoader(ProductList, getHouses, 'https://house-lydiahallie.vercel.app/api/listings')
+
+export default ProductListWhitLoader
