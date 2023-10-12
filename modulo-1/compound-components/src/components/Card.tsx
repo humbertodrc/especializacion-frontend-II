@@ -5,7 +5,7 @@ interface CardProps {
 	character: Character;
 }
 
-const Card:FC<CardProps> = ({character}) => {
+const Card = ({character}: CardProps) => {
 	return (
 		<article>
 			<div>
