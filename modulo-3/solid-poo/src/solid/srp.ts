@@ -1,5 +1,5 @@
 // Principio de Responsabilidad Única (SRP - Single Responsibility Principle):
-// Este principio establece que una clase debe tener una única razón para cambiar. Debe tener una sola responsabilidad. Aquí tienes un ejemplo en TypeScript
+// Este principio establece que una clase debe tener una única razón para cambiar. Debe tener una sola responsabilidad.
 
 // Mal ejemplo: Violando el SRP
 class Usuario {
