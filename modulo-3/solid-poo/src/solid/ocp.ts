@@ -15,19 +15,3 @@ class CalculadoraAvanzada extends Calculadora {
   }
 }
 
-// Buen ejemplo: Cumpliendo con el OCP
-interface Operacion {
-  ejecutar(a: number, b: number): number;
-}
-
-class Suma implements Operacion {
-  ejecutar(a: number, b: number): number {
-    return a + b;
-  }
-}
-
-class Resta implements Operacion {
-  ejecutar(a: number, b: number): number {
-    return a - b;
-  }
-}

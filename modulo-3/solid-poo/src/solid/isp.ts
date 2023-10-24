@@ -16,20 +16,4 @@ class Trabajador implements Trabajo {
   }
 }
 
-// Buen ejemplo: Cumpliendo con el ISP
-interface Trabajo {
-  trabajar(): void;
-}
 
-interface Descanso {
-  descansar(): void;
-}
-
-class Trabajador implements Trabajo, Descanso {
-  trabajar() {
-    // Implementación
-  }
-  descansar() {
-    // Implementación
-  }
-}
