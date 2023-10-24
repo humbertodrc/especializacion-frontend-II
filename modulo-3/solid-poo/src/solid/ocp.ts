@@ -15,9 +15,9 @@ class CalculadoraAvanzada extends Calculadora {
   }
 }
 
-// Buen ejemplo: Cumpliendo con el OCP
+// Uso correcto del OCP
 interface Operacion {
-  ejecutar(a: number, b: number): number;
+  ejecutar(a:number, b:number): number;
 }
 
 class Suma implements Operacion {
@@ -31,3 +31,9 @@ class Resta implements Operacion {
     return a - b;
   }
 }
+
+const suma = new Suma();
+const resta = new Resta();
+
+console.log(suma.ejecutar(1, 2));
+console.log(resta.ejecutar(10, 2));
