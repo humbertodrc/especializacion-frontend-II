@@ -1,3 +1,5 @@
+import { nombre } from '../../../../modulo-2/buenas-practicas/src/ejercicios/nombres';
+
 // Principio de Responsabilidad Única (SRP - Single Responsibility Principle):
 // Este principio establece que una clase debe tener una única razón para cambiar. Debe tener una sola responsabilidad.
 
