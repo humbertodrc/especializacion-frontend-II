@@ -3,6 +3,11 @@
 
 // Mal ejemplo: Violando el LSP
 class Pajaro {
+
+  comer() {
+    console.log("Comiendo");
+  }
+
   volar() {
     console.log("Volando alto");
   }
@@ -10,25 +15,31 @@ class Pajaro {
 
 class Pinguino extends Pajaro {
   volar() {
-    console.log("Nadando en lugar de volar");
+    throw new Error("No puede volar");
   }
 }
 
 // Buen ejemplo: Cumpliendo con el LSP
 class Ave {
-  volar() {
-    console.log("Volando alto");
+  comer() {
+    console.log("Comiendo");
   }
 }
 
-class Pajaro extends Ave {
+class AveVoladora extends Ave {
   volar() {
     console.log("Volando alto");
   }
 }
 
 class Pinguino extends Ave {
+  comer() {
+    console.log("Comiendo");
+  }
+}
+
+class Aguila extends AveVoladora {
   volar() {
-    console.log("No puede volar, pero nada muy bien");
+    console.log("Volando alto");
   }
 }
