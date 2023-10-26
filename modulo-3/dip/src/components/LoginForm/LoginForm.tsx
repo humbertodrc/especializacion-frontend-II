@@ -1,15 +1,18 @@
 import React, { useState } from 'react';
-import postApi from '../../apis/postApi';
 import style from '../LoginForm/styles/LoginForm.module.css';
 
-const LoginForm : React.FC = () => {
+interface LoginFormProps {
+  onSubmit: (title: string, bodyPost: string) => void
+}
+
+const LoginForm : React.FC<LoginFormProps> = ({onSubmit}) => {
 	const [title, setTitle] = useState('')
 	const [bodyPost, setBodyPost] = useState('')
 	
 	
   const handleSubmit = async (evt: React.SyntheticEvent) => {
     evt.preventDefault()
-		await postApi.post("/posts", { title, body: bodyPost })
+		onSubmit(title, bodyPost)
 		alert(`Enviado: ${title} ${bodyPost}`)
   }
   return (
