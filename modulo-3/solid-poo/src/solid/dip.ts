@@ -20,25 +20,3 @@ class Interruptor {
   }
 }
 
-// Buen ejemplo: Cumpliendo con el DIP
-interface Dispositivo {
-  encender(): void;
-}
-
-class Luz implements Dispositivo {
-  encender() {
-    // Implementación de encendido
-  }
-}
-
-class Interruptor {
-  private dispositivo: Dispositivo;
-
-  constructor(dispositivo: Dispositivo) {
-    this.dispositivo = dispositivo;
-  }
-
-  encenderDispositivo() {
-    this.dispositivo.encender();
-  }
-}
