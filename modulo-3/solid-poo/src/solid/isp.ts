@@ -16,4 +16,20 @@ class Trabajador implements Trabajo {
   }
 }
 
+// Correcta implementación del ISP
+interface Trabajo {
+  trabajar(): void;
+}
 
+interface Descanso {
+  descansar(): void;
+}
+
+class Trabajador2 implements Trabajo, Descanso {
+  trabajar() {
+    // Implementación
+  }
+  descansar() {
+    // Implementación
+  }
+}

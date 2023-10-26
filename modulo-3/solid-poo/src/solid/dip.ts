@@ -20,3 +20,24 @@ class Interruptor {
   }
 }
 
+interface Dispositivo {
+  encender(): void;
+}
+
+class Luz implements Dispositivo{
+  encender(): void {
+    // Implementación de encendido
+  }
+}
+
+class Interruptor2 {
+  private dispositivo: Dispositivo;
+
+  constructor(dispositivo: Dispositivo) {
+    this.dispositivo = dispositivo;
+  }
+
+  encenderDispositivo() {
+    this.dispositivo.encender();
+  }
+}
