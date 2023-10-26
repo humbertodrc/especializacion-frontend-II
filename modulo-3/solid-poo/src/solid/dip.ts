@@ -24,7 +24,7 @@ interface Dispositivo {
   encender(): void;
 }
 
-class Luz implements Dispositivo{
+class Luz2 implements Dispositivo{
   encender(): void {
     // Implementación de encendido
   }
