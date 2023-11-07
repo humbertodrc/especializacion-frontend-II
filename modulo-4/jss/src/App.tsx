@@ -1,6 +1,7 @@
 import "./App.css";
 
 import logo from "./assets/logo.svg";
+import {Button} from "./components/Button";
 import {Character} from "./components/Character";
 import {Modal} from "./components/Modal";
 import useModal from "./hooks/useModal";
@@ -14,14 +15,36 @@ function App() {
 			<img src={logo} />
 			<div>
 				{/* Cambia estilos a JSS */}
-				<button onClick={toggleAlive}>
+				{/* <button onClick={toggleAlive}>
 					<p className="ButtonAliveRicks">Rick's vivos</p>
-				</button>
+				</button> */}
+				<Button
+					backgroundColor="#00beab"
+					labelColor="#000"
+					fontWeight={400}
+					fontStyle="italic"
+					spacing="0.8rem 2rem"
+					fontSize="18px"
+					onClick={toggleAlive}
+				>
+					Rick's vivos
+				</Button>
 
 				{/* Cambia estilos a JSS */}
-				<button onClick={toggleDead}>
+				{/* <button onClick={toggleDead}>
 					<p className="ButtonDeadsRicks">Rick's vivos</p>
-				</button>
+				</button> */}
+				<Button
+					backgroundColor="#00beab"
+					labelColor="#000"
+					fontWeight={400}
+					fontStyle="italic"
+					spacing="0.8rem 2rem"
+					fontSize="18px"
+					onClick={toggleDead}
+				>
+					Rick's muertos
+				</Button>
 			</div>
 
 			{/* Cambia estilos a JSS */}
