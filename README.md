@@ -560,44 +560,7 @@ return <div className={styles.myClass}>Hola Mundo</div>;
 }
 ```
 
-3. **Styled Components:**
-
-   - Utiliza una librería como **`styled-components`** para escribir estilos CSS en JavaScript.
-   - Permite definir estilos de componentes de manera más legible y mantenible.
-
-```jsx
-import styled from "styled-components";
-
-const StyledDiv = styled.div`
-color: blue;
-font-size: 16px;
-`;
-
-function MyComponent() {
-return <StyledDiv>Hola Mundo</StyledDiv>;
-}
-```
-
-4. **Emotion:**
-
-   - Otra librería de CSS-in-JS como Emotion que permite estilos en JavaScript.
-   - Similar a **`styled-components`**, pero con algunas diferencias en la sintaxis.
-
-```jsx
-/** @jsxImportSource @emotion/react */
-import {css} from "@emotion/react";
-
-const elementStyle = css`
-color: blue;
-font-size: 16px;
-`;
-
-function MyComponent() {
-return <div css={elementStyle}>Hola Mundo</div>;
-}
-```
-
-5. **JSS (JavaScript Style Sheets):**
+3. **JSS (JavaScript Style Sheets):**
 
    - Utiliza JSS para definir estilos en JavaScript.
    - Proporciona un enfoque programático para definir estilos.
@@ -617,3 +580,41 @@ const classes = useStyles();
 return <div className={classes.myClass}>Hola Mundo</div>;
 }
 ```
+
+4. **Styled Components:**
+
+   - Utiliza una librería como **`styled-components`** para escribir estilos CSS en JavaScript.
+   - Permite definir estilos de componentes de manera más legible y mantenible.
+
+```jsx
+import styled from "styled-components";
+
+const StyledDiv = styled.div`
+color: blue;
+font-size: 16px;
+`;
+
+function MyComponent() {
+return <StyledDiv>Hola Mundo</StyledDiv>;
+}
+```
+
+5. **Emotion:**
+
+   - Otra librería de CSS-in-JS como Emotion que permite estilos en JavaScript.
+   - Similar a **`styled-components`**, pero con algunas diferencias en la sintaxis.
+
+```jsx
+/** @jsxImportSource @emotion/react */
+import {css} from "@emotion/react";
+
+const elementStyle = css`
+color: blue;
+font-size: 16px;
+`;
+
+function MyComponent() {
+return <div css={elementStyle}>Hola Mundo</div>;
+}
+```
+
