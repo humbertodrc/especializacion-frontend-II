@@ -16,17 +16,24 @@ body {
   gap: 56px;
 }
 
-.App div button {
-  background-color: rgb(0, 190, 171);
+button{
+  text-transform: uppercase;
   cursor: pointer;
-  padding: 1rem 2rem;
+  border-radius: 4px;
+  border: none;
+}
+
+.App div button {
+  background-color: #00beab;
+  cursor: pointer;
+  padding: 1rem;
   text-transform: uppercase;
   border: none;
   font-size: 18px;
   border-radius: 4px;
 }
 .App div button:hover {
-  background-color: rgb(0, 212, 191);
+  background-color: #00d4bf;
 }
 
 .App div button:not(:first-child) {
@@ -49,4 +56,3 @@ img {
   margin: 0 auto;
   border-radius: 8px;
 }
-
