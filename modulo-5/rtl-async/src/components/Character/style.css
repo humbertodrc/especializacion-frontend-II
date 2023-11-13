@@ -1,0 +1,35 @@
+/* Grilla para las crads */
+
+section {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-gap: 1rem;
+	grid-auto-rows: minmax(100px, auto);
+}
+
+.character {
+	border-radius: 16px;
+	/* width: 400px; */
+	height: auto;
+	padding: 16px;
+	text-align: center;
+	background-color: #16181a;
+}
+
+img {
+	width: 100%;
+	height: auto;
+	border-radius: 16px;
+}
+
+h2 {
+	color: #fff;
+	font-size: 1.5rem;
+	margin: 0.5rem 0;
+}
+
+p {
+	color: #fff;
+	font-size: 1rem;
+	margin: 0.5rem 0;
+}

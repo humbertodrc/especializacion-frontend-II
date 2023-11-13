@@ -1,0 +1,29 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.menu {
+  position: relative;
+  display: flex;
+  background-color: rgba(256, 256, 256, 0.6);
+  transform: filter(blur);
+  backdrop-filter: blur(3px);
+  height: 100vh;
+  width: 35vw;
+}
+
+.close {
+  position: absolute;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  padding-top: 30%;
+}
