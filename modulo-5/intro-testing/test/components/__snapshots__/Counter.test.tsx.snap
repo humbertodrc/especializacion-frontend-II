@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <Counter /> Debe conincidir con el snapshot 1`] = `
+<div>
+  <div
+    class="App"
+  >
+    <h1>
+      Testing React
+    </h1>
+    <h2>
+      50
+    </h2>
+    <div
+      class="card"
+    >
+      <button>
+        +1
+      </button>
+      <button>
+        -1
+      </button>
+    </div>
+  </div>
+</div>
+`;
