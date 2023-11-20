@@ -1,0 +1,27 @@
+body {
+	background: #000000c4;
+}
+
+.App{
+  padding: 20px;
+}
+
+h1 {
+	color: #fff;
+	font-size: 4rem;
+	margin: 0.5rem 0;
+	text-align: center;
+}
+
+.logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.logo-princial {
+	width: 400px;
+	height: auto;
+}
