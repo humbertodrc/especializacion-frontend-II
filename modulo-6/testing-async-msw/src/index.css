@@ -1,5 +1,5 @@
 body {
-	background: #000000c4;
+	background: #000;
 }
 
 .App{
@@ -13,15 +13,20 @@ h1 {
 	text-align: center;
 }
 
-.logo {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 30px 0;
+.grilla{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 20px;
 }
 
-.logo-princial {
-	width: 400px;
-	height: auto;
+.card{
+	background: #181818;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+	padding: 20px;
+	color: #fff;
+}
+
+.card img{
+	width: 100%;
 }
