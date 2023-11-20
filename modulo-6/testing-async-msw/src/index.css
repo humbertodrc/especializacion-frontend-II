@@ -3,7 +3,7 @@ body {
 }
 
 .App{
-  padding: 20px;
+  padding: 20px 50px;
 }
 
 h1 {
@@ -39,15 +39,45 @@ h1 {
 	color: #fff;
 	display: flex;
 	align-items: center;
-	margin: 30px 0;
+	max-width: 700px;
+	margin: 30px auto;
+}
+
+form{
+	width: 100%;
+	display: flex;
+	border: 1px solid #fff;
+	border-radius: 10px;
 }
 
 .search input{
 	background: transparent;
 	border: none;
-	border-bottom: 1px solid #fff;
 	color: #fff;
 	font-size: 1.5rem;
 	padding: 10px;
-	width: 100%;
+	width: -webkit-fill-available;
+	padding: 10px 20px;
+}
+
+.search input:focus{
+	outline: none;
+}
+
+.search button{
+	background: transparent;
+	border: none;
+	color: #fff;
+	font-size: 1.5rem;
+	padding: 10px;
+	cursor: pointer;
+	border-left: 1px solid #fff;
+}
+
+.search button:focus{
+	outline: none;
+}
+
+.search button:hover{
+	color: #ccc;
 }
