@@ -1,7 +1,7 @@
 import { gql } from '@apollo/client';
 
 export const GET_ALL_CHARACTERS = gql`
-  query {
+  query GetCharacters {
     characters{
       results{
         id,
@@ -15,7 +15,7 @@ export const GET_ALL_CHARACTERS = gql`
 `
 
 export const GET_CHARACTER_BY_ID = gql`
-  query($id: ID!) {
+  query getCharacter($id: ID!) {
     character(id: $id) {
       id,
       name,
